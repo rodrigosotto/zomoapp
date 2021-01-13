@@ -25,3 +25,15 @@
 #container a {
   text-decoration: none;
 }
+ion-content { 
+  --background: #fff url('../../assets/images/home/fundo-home-app.jpg') !important;
+ }
+.title-home {
+  color: blueviolet;
+  font-family: 'BebasNeueBold'; 
+  font-size: 2.2rem;
+}
+.button-home {
+  margin-top: 3rem;
+  font-family: 'BebasNeueBold'; 
+ }

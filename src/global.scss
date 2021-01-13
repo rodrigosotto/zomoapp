@@ -24,3 +24,20 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+@font-face {   
+  font-family: 'Cartoonish';    //This is what we are going to call
+  src: url('../../zomoofficial/src/assets/fonts/Cartoonish.ttf');
+}
+@font-face {   
+  font-family: 'BebasNeueBold';    //This is what we are going to call
+  src: url('../../zomoofficial/src/assets/fonts/BebasNeueBold.ttf');
+}
+@font-face {   
+  font-family: 'BebasNeueRegular';    //This is what we are going to call
+  src: url('../../zomoofficial/src/assets/fonts/BebasNeueRegular.otf');
+}
+@font-face {   
+  font-family: 'BebasNeueBook';    //This is what we are going to call
+  src: url('../../zomoofficial/src/assets/fonts/BebasNeueBook.otf');
+}

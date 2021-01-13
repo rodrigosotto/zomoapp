@@ -1,0 +1,63 @@
+ion-header {
+
+  ion-toolbar {
+      --background: #4854e0;
+      color:#fff ;
+      font-size: 1.3rem;
+      font-family: 'BebasNeueBold';
+    }
+}
+
+ion-content { 
+  --background: #fff url('../../assets/images/dashboard/fundo-laranja-novo.jpg') !important;
+    font-family: 'BebasNeueBold';
+    
+    ion-list {
+      background: transparent !important;
+      
+      ion-item {
+        --background: transparent !important;
+        color: #fff;
+
+        ion-label {
+          font-family: 'BebasNeueBold';
+          font-size: 1.2rem;
+          color: #4854e0;
+        }
+        
+        &:first-of-type {
+          border-top: 0.55px solid rgba(0, 0, 0, 0.185);
+        }
+      }
+     }
+
+    .title-dashboard-page {
+      font-size: 1.7rem;
+      margin: 2rem 0;
+      color: #e90088; 
+  }
+    .title-icons-dash {
+      font-size: 1.2rem;
+      font-family: 'BebasNeueBold';
+      color: #fff; 
+  }
+}
+ 
+ion-footer {
+
+  ion-toolbar {
+    --background: #4854e0 !important;
+    color: #fff;
+    font-size: 1.3rem;
+    font-family: 'BebasNeueBold';
+
+    .container {
+      font-size: 2.5rem;
+      color: #f68a1e;  
+      .icones-sociais {
+        padding: 0 10px;
+      }
+    }
+  }
+}
+  
