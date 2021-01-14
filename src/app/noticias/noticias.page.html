@@ -12,8 +12,8 @@
     <ion-list>
       <ion-item *ngFor="let posts of postData">
         <ion-card (click)=postView(posts.id)>
-          <ion-title>{{posts.title.rendered}}
-      </ion-title>
+          <img src="{{postView.better_featured_image.source_url}}">
+          <ion-title>{{posts.title.rendered}}</ion-title>
         </ion-card>
       </ion-item>
     </ion-list>

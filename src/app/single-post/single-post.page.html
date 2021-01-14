@@ -8,10 +8,11 @@
 </ion-header>
 <ion-content>
 
-  <ion-card *ngIf="postView">
-<ion-title>{{postView.title.rendered}}</ion-title>
-<ion-title>{{postView.date}}</ion-title>
-<ion-note [innerHTML]="postView.content.rendered" ></ion-note>
+  <ion-card *ngIf="postView" class="ion-text-center">
+    <img src="{{postView.better_featured_image.source_url}}">
+<p>{{postView.title.rendered}}</p>
+<span>{{postView.date}}</span>
+<ion-card-content [innerHTML]="postView.content.rendered" ></ion-card-content>
   </ion-card>
 
 </ion-content>
