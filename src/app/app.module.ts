@@ -1,3 +1,4 @@
+import { IonicStorageModule } from '@ionic/storage';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
@@ -16,9 +17,10 @@ import { HttpClientModule } from '@angular/common/http';
   declarations: [AppComponent],
   entryComponents: [],
   imports: [
-    BrowserModule, 
-    HttpClientModule, 
-    IonicModule.forRoot(), 
+    BrowserModule,
+    IonicStorageModule.forRoot(),
+    HttpClientModule,
+    IonicModule.forRoot(),
     AppRoutingModule],
   providers: [
     StatusBar,

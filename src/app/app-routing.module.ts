@@ -19,6 +19,10 @@ const routes: Routes = [
     path: 'noticias',
     loadChildren: () => import('./noticias/noticias.module').then( m => m.NoticiasPageModule)
   },
+  {
+    path: 'single-post',
+    loadChildren: () => import('./single-post/single-post.module').then( m => m.SinglePostPageModule)
+  },
 ];
 
 @NgModule({

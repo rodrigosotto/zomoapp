@@ -16,20 +16,7 @@ const base_url = 'http://localhost:10022/wp-json/wp/v2/posts';
 })
 export class ApiService {
 id: any;
-//HTTP CLIENT é responsavel por fazer a ligação da nossa aplicação com a api rest sempre teremos que importar
-
-//private base_url = 'https://reqres.in/api/users';
-//private base_url = 'http://localhost:10022/wp-json/wp/v2/';
   constructor(private http:HttpClient) { }
-  //condicao para varificar se o numero de paginacao vier zerado ele acrescenta 1
-  // a api em questão permite paginação
- // getPosts(pagina: number) {
-    //if (pagina <=0){
-      //pagina = 1;
-    //}
-//usamos a crase pois ela pérmite chamar variaveis dentro de string
-    //return this.http.get(`${this.base_url}?page=${pagina}`);
-  //}
 
   private errorHandle(error:HttpErrorResponse){
     if (error.error instanceof ErrorEvent) {
@@ -41,6 +28,11 @@ id: any;
     }
     return throwError('Check code and server response from end point');
   }
+
+  private dataExtract(res: Response){
+    const body = res;
+    return body || {};
+  }
   getAPIData(): Observable<any> {
     return this.http.get(base_url, httpHeaders).pipe(
       map(this.dataExtract),
@@ -48,9 +40,11 @@ id: any;
     );
   }
 
-  private dataExtract(res: Response){
-    const body = res;
-    return body || {};
+  getAPIDataByID(id): Observable<any> {
+    return this.http.get(base_url + '/' + id, httpHeaders).pipe(
+      map(this.dataExtract),
+      catchError(this.errorHandle)
+    );
   }
 
 }
