@@ -1,6 +1,9 @@
+import { async } from '@angular/core/testing';
+import { ApiService } from './../services/api.service';
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { NavController, NavParams } from '@ionic/angular';
+import { getLocaleDateFormat } from '@angular/common';
 
 @Component({
   selector: 'app-noticias',
@@ -8,18 +11,22 @@ import { NavController, NavParams } from '@ionic/angular';
   styleUrls: ['./noticias.page.scss'],
 })
 export class NoticiasPage {
+  postData: any;
 
-  allPosts: any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private httpClient: HttpClient)  { 
-    this.allPosts = this.httpClient.get('http://zomozpod.foa.company/wp-json/wp/v2/posts');
-    //this.allPosts
-    //.subscribe(data => {
-     // console.log('Api Posts: ', data);
-    //})
+  constructor( private apiService: ApiService)  {}
+ 
+    ngOnInit() {
+      this.getData();
+    }
+
+  async getData(){
+    await this.apiService.getAPIData().subscribe(res =>{
+      console.log(res);
+      this.postData = res;
+      console.log(this.postData);
+    },err =>{
+      console.log(err);
+    } );
   }
-  openDetails(post) {
-    this.navCtrl.navigateForward('PostDetailsPage');
-  }
-
 }
