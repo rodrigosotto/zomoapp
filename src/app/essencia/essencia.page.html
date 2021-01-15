@@ -1,0 +1,56 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar class="header-toolbar">
+    <ion-buttons slot="start">
+      <ion-back-button>Voltar</ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">ESSÊNCIAS</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+
+  <ion-card *ngIf="essenciasView" class="ion-text-center">
+    <img class="versoes" src="{{essenciasView.better_featured_image.source_url}}">
+<p>{{essenciasView.title.rendered}}</p>
+<span>{{essenciasView.date}}</span> 
+<ion-card-content [innerHTML]="essenciasViewcontent.rendered" ></ion-card-content>
+
+<!-- Colorize Progressbar -->
+<ion-item>
+  <ion-text>DOCE </ion-text> 
+  <ion-progress-bar color="primary" value="0.3"></ion-progress-bar>
+</ion-item>
+
+ <ion-item>
+  <ion-text>INTENSIDADE </ion-text> 
+  <ion-progress-bar color="danger" value="0.5"></ion-progress-bar>
+</ion-item>
+
+<ion-item>
+  <ion-text>MENTOLADO </ion-text> 
+  <ion-progress-bar color="success" value="0.7"></ion-progress-bar>
+</ion-item>
+
+<ion-item>
+  <ion-text class="ion-text-center">CITRÍCO </ion-text> 
+   <ion-progress-bar color="secondary" value="0.2"></ion-progress-bar>
+</ion-item> 
+
+<ion-item>
+    <ion-text class="text-bar">FUMAÇA </ion-text> 
+    <ion-progress-bar color="dark" value="0.9"></ion-progress-bar>
+</ion-item>
+ 
+  </ion-card>
+</ion-content>
+  
+  <!-- Footer without a border -->
+  <ion-footer class="ion-no-border rodape ion-text-center">
+    <ion-toolbar class=" rodape-toolbar ion-padding-bottom">
+      <p class="title-dashboard-footer">SEGUE A GENTE PARÇA!!</p>
+         <div class="container ion-text-center">
+          <ion-icon name="logo-facebook" class="icones-sociais"></ion-icon>
+          <ion-icon name="logo-instagram" class="icones-sociais"></ion-icon>
+          <ion-icon name="logo-youtube" class="icones-sociais"></ion-icon>
+        </div>
+    </ion-toolbar>
+  </ion-footer>

@@ -9,40 +9,23 @@ ion-header {
     }
 }
 
-ion-content { 
+ion-content {
   --background: #fff url('../../assets/images/fundos/fundo-pages-app-zomo.jpg') !important;
-    font-family: 'BebasNeueBold';
-    
-    ion-list {
-      background: transparent !important;
-      
-      ion-item {
-        --background: transparent !important;
-        color: #fff;
+  font-family: 'BebasNeueBold';
 
-        ion-label {
-          font-family: 'BebasNeueBold';
-          font-size: 1.2rem;
-          color: #ff224a;
-        }
-        
-        &:first-of-type {
-          border-top: 0.55px solid rgba(0, 0, 0, 0.185);
-        }
-      }
-     }
-
-    .title-dashboard-page {
-      font-size: 1.5rem;
-      color: #ff224a; 
+  ion-text {
+       font-size: 0.7rem;
   }
-    .title-icons-dash {
-      font-size: 1.2rem;
-      font-family: 'BebasNeueBold';
-      color: #fff; 
+  
+  ion-progress-bar {
+    height: 15px;
+    width: 200px;
+    margin-left: 5px;
+    float: left;
   }
 }
- 
+
+
 ion-footer {
 
   ion-toolbar {
@@ -61,4 +44,3 @@ ion-footer {
     }
   }
 }
-  

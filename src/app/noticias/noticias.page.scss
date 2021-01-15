@@ -1,15 +1,16 @@
 ion-header {
 
   ion-toolbar {
-      --background: #4854e0;
-      color:#fff ;
+    //--background: #fff url('../../assets/images/fundos/fundo-azul-texturas.jpg') !important;
+      --background: #001a5f;
+      color:#ff224a ;
       font-size: 1.3rem;
       font-family: 'BebasNeueBold';
     }
 }
 
 ion-content { 
-  --background: #fff url('../../assets/images/fundos/fundo-pages-app.jpg') !important;
+  --background: #fff url('../../assets/images/fundos/fundo-pages-app-zomo.jpg') !important;
     font-family: 'BebasNeueBold';
 
     .title-dashboard-page {
@@ -36,24 +37,22 @@ ion-content {
       }
      }
     }
+    
+    ion-footer {
 
-
-
-
-ion-footer {
-
-  ion-toolbar {
-    --background: #4854e0 !important;
-    color: #fff;
-    font-size: 1.3rem;
-    font-family: 'BebasNeueBold';
-
-    .container {
-      font-size: 2.5rem;
-      color: #f68a1e;  
-      .icones-sociais {
-        padding: 0 10px;
+      ion-toolbar {
+        //--background: #ffffff url('../../assets/images/fundos/fundo-azul-texturas.jpg') !important;
+        --background: #001a5f !important;
+        color: #ff224a;
+        font-size: 1rem;
+        font-family: 'BebasNeueBold';
+    
+        .container {
+          font-size: 2rem;
+          color: #ff224a;  
+          .icones-sociais {
+            padding: 0 10px;
+          }
+        }
       }
     }
-  }
-}

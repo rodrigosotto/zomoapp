@@ -23,6 +23,22 @@ const routes: Routes = [
     path: 'single-post',
     loadChildren: () => import('./single-post/single-post.module').then( m => m.SinglePostPageModule)
   },
+  {
+    path: 'mix',
+    loadChildren: () => import('./mix/mix.module').then( m => m.MixPageModule)
+  },
+  {
+    path: 'encontre-zomo',
+    loadChildren: () => import('./encontre-zomo/encontre-zomo.module').then( m => m.EncontreZomoPageModule)
+  },
+  {
+    path: 'eventos',
+    loadChildren: () => import('./eventos/eventos.module').then( m => m.EventosPageModule)
+  },
+  {
+    path: 'essencia',
+    loadChildren: () => import('./essencia/essencia.module').then( m => m.EssenciaPageModule)
+  },
 ];
 
 @NgModule({

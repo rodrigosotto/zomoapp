@@ -1,7 +1,7 @@
 <ion-header class="ion-no-border">
   <ion-toolbar class="header-toolbar">
     <ion-buttons slot="start">
-      <ion-back-button></ion-back-button>
+      <ion-back-button>Voltar</ion-back-button>
     </ion-buttons>
     <ion-title class="ion-text-center">SINGLE POST</ion-title>
   </ion-toolbar>
@@ -9,12 +9,12 @@
 <ion-content [fullscreen]="true">
 
   <ion-card *ngIf="postView" class="ion-text-center">
-    <img src="{{postView.better_featured_image.source_url}}">
+    <img class="versoes" src="{{postView.better_featured_image.source_url}}">
 <p>{{postView.title.rendered}}</p>
-<span>{{postView.date}}</span>
+<span>{{postView.date}}</span> 
 <ion-card-content [innerHTML]="postView.content.rendered" ></ion-card-content>
+ 
   </ion-card>
-<ion-button routerLink="../noticias" routerDirection="forward">Voltar</ion-button>
 </ion-content>
   
   <!-- Footer without a border -->
