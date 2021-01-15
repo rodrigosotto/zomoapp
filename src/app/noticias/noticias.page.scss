@@ -9,8 +9,13 @@ ion-header {
 }
 
 ion-content { 
-  --background: #fff url('../../assets/images/dashboard/fundo-laranja-novo.jpg') !important;
+  --background: #fff url('../../assets/images/fundos/fundo-pages-app.jpg') !important;
     font-family: 'BebasNeueBold';
+
+    .title-dashboard-page {
+      font-size: 1.7rem;
+      color: #ff224a; 
+  }
     
     ion-list {
       background: transparent !important;

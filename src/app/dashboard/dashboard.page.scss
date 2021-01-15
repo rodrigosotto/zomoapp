@@ -1,16 +1,17 @@
 ion-header {
 
   ion-toolbar {
-      --background: #4854e0;
-      color:#fff ;
-      font-size: 1.3rem;
-      font-family: 'BebasNeueBold';
+    --background: #fff url('../../assets/images/fundos/fundo-escuro.jpg') !important;
+      // --background: #4854e0;
+      color:#e90088 ;
+      font-size: 1.5rem;
+      font-family: 'Cartoonish';
     }
 }
 
 ion-content { 
-  --background: #fff url('../../assets/images/dashboard/fundo-laranja-novo.jpg') !important;
-    font-family: 'BebasNeueBold';
+  --background: #fff url('../../assets/images/fundos/fundo-pages-app.jpg') !important;
+    font-family: 'Cartoonish';
     
     ion-list {
       background: transparent !important;
@@ -22,7 +23,7 @@ ion-content {
         ion-label {
           font-family: 'BebasNeueBold';
           font-size: 1.2rem;
-          color: #4854e0;
+          color: #ff224a;
         }
         
         &:first-of-type {
@@ -32,8 +33,7 @@ ion-content {
      }
 
     .title-dashboard-page {
-      font-size: 1.7rem;
-      margin: 2rem 0;
+      font-size: 1.5rem;
       color: #e90088; 
   }
     .title-icons-dash {
@@ -46,14 +46,15 @@ ion-content {
 ion-footer {
 
   ion-toolbar {
-    --background: #4854e0 !important;
+    --background: #fff url('../../assets/images/fundos/fundo-escuro.jpg') !important;
+    // --background: #4854e0 !important;
     color: #fff;
     font-size: 1.3rem;
     font-family: 'BebasNeueBold';
 
     .container {
       font-size: 2.5rem;
-      color: #f68a1e;  
+      color: #e90088;  
       .icones-sociais {
         padding: 0 10px;
       }

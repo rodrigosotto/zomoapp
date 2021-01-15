@@ -9,11 +9,16 @@
   </ion-header>
   
   <ion-content [fullscreen]="true">
+
+    <ion-text>
+      <h1 class="title-dashboard-page ion-text-center ion-padding">LANÇAMENTOS, NOTÍCIAS, EVENTOS, DICAS...  </h1>
+      </ion-text>
+
   <ion-list lines="full">
     <ion-item (click)=postView(posts.id) detail *ngFor="let posts of postData">
-      <ion-avatar slot="start">
+      <!-- <ion-avatar slot="start">
         <img src="../../assets/icon/icon-essencia.png" />
-      </ion-avatar>
+      </ion-avatar> -->
       <ion-label>{{posts.title.rendered}}</ion-label>
     </ion-item>
     </ion-list>
