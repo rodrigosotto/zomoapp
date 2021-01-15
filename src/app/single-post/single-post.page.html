@@ -6,7 +6,7 @@
     <ion-title class="ion-text-center">SINGLE POST</ion-title>
   </ion-toolbar>
 </ion-header>
-<ion-content>
+<ion-content [fullscreen]="true">
 
   <ion-card *ngIf="postView" class="ion-text-center">
     <img src="{{postView.better_featured_image.source_url}}">
@@ -14,7 +14,7 @@
 <span>{{postView.date}}</span>
 <ion-card-content [innerHTML]="postView.content.rendered" ></ion-card-content>
   </ion-card>
-
+<ion-button routerLink="../noticias" routerDirection="forward">Voltar</ion-button>
 </ion-content>
   
   <!-- Footer without a border -->

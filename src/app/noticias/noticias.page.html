@@ -9,17 +9,16 @@
   </ion-header>
   
   <ion-content [fullscreen]="true">
-    <ion-list>
-      <ion-item *ngFor="let posts of postData">
-        <ion-card (click)=postView(posts.id)>
-          <img src="{{postView.better_featured_image.source_url}}">
-          <ion-title>{{posts.title.rendered}}</ion-title>
-        </ion-card>
-      </ion-item>
+  <ion-list lines="full">
+    <ion-item (click)=postView(posts.id) detail *ngFor="let posts of postData">
+      <ion-avatar slot="start">
+        <img src="../../assets/icon/icon-essencia.png" />
+      </ion-avatar>
+      <ion-label>{{posts.title.rendered}}</ion-label>
+    </ion-item>
     </ion-list>
-  </ion-content>
-  
-  
+    </ion-content>
+
   <!-- Footer without a border -->
   <ion-footer class="ion-no-border rodape ion-text-center">
     <ion-toolbar class=" rodape-toolbar ion-padding-bottom">

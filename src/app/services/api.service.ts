@@ -9,7 +9,7 @@ const httpHeaders = {
   headers: new HttpHeaders({'Content-Type': 'Application/json'})
 };
 
-const base_url = 'http://localhost:10022/wp-json/wp/v2/posts';
+const base_url = 'http://serverapi.local/wp-json/wp/v2/posts';
 
 @Injectable({
   providedIn: 'root'
