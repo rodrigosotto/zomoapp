@@ -38,7 +38,11 @@ const routes: Routes = [
   {
     path: 'essencia',
     loadChildren: () => import('./essencia/essencia.module').then( m => m.EssenciaPageModule)
+  },  {
+    path: 'single-essences',
+    loadChildren: () => import('./single-essences/single-essences.module').then( m => m.SingleEssencesPageModule)
   },
+
 ];
 
 @NgModule({

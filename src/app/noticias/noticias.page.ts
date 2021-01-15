@@ -14,6 +14,7 @@ import { Router } from '@angular/router';
 })
 export class NoticiasPage {
   postData: any;
+  
   constructor(
     private apiService: ApiService,
     private router: Router,

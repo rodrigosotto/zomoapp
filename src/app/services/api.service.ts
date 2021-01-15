@@ -9,14 +9,16 @@ const httpHeaders = {
   headers: new HttpHeaders({'Content-Type': 'Application/json'})
 };
 
-const base_url = 'http://localhost:10022/wp-json/wp/v2/posts';
-//const url_essencias = 'http://localhost:10022/wp-json/wp/v2/essencias';
+const base_url = 'http://serverapi.local/wp-json/wp/v2/posts';
+const essences_url = 'http://serverapi.local/wp-json/wp/v2/essencias';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ApiService {
 id: any;
+category: any;
+
   constructor(private http:HttpClient) { }
 
   private errorHandle(error:HttpErrorResponse){
@@ -34,6 +36,7 @@ id: any;
     const body = res;
     return body || {};
   }
+  
   getAPIData(): Observable<any> {
     return this.http.get(base_url, httpHeaders).pipe(
       map(this.dataExtract),
@@ -43,6 +46,21 @@ id: any;
 
   getAPIDataByID(id): Observable<any> {
     return this.http.get(base_url + '/' + id, httpHeaders).pipe(
+      map(this.dataExtract),
+      catchError(this.errorHandle)
+    );
+  }
+
+  //essences data
+  getAPIDataEssences(): Observable<any> {
+    return this.http.get(essences_url, httpHeaders).pipe(
+      map(this.dataExtract),
+      catchError(this.errorHandle)
+    );
+  }
+
+  getAPIDataEssencesByID(id): Observable<any> {
+    return this.http.get(essences_url + '/' + id, httpHeaders).pipe(
       map(this.dataExtract),
       catchError(this.errorHandle)
     );
