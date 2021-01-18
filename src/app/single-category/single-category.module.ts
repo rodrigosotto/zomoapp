@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { EssenciaPageRoutingModule } from './essencia-routing.module';
+import { SingleCategoryPageRoutingModule } from './single-category-routing.module';
 
-import { EssenciaPage } from './essencia.page';
+import { SingleCategoryPage } from './single-category.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    EssenciaPageRoutingModule
+    SingleCategoryPageRoutingModule
   ],
-  declarations: [EssenciaPage]
+  declarations: [SingleCategoryPage]
 })
-export class EssenciaPageModule {}
+export class SingleCategoryPageModule {}

@@ -1,0 +1,58 @@
+ion-header {
+
+  ion-toolbar {
+    //--background: #fff url('../../assets/images/fundos/fundo-azul-texturas.jpg') !important;
+      --background: #001a5f;
+      color:#ff224a ;
+      font-size: 1.3rem;
+      font-family: 'BebasNeueBold';
+    }
+}
+
+ion-content { 
+  --background: #fff url('../../assets/images/fundos/fundo-pages-app-zomo.jpg') !important;
+    font-family: 'BebasNeueBold';
+
+    .title-dashboard-page {
+      font-size: 1.7rem;
+      color: #ff224a; 
+  }
+    
+    ion-list {
+      background: transparent !important;
+      
+      ion-item {
+        --background: transparent !important;
+        color: #fff;
+
+        ion-label {
+          font-family: 'BebasNeueBold';
+          font-size: 1.2rem;
+          color: #4854e0;
+        }
+        
+        &:first-of-type {
+          border-top: 0.55px solid rgba(0, 0, 0, 0.185);
+        }
+      }
+     }
+    }
+    
+    ion-footer {
+
+      ion-toolbar {
+        //--background: #ffffff url('../../assets/images/fundos/fundo-azul-texturas.jpg') !important;
+        --background: #001a5f !important;
+        color: #ff224a;
+        font-size: 1rem;
+        font-family: 'BebasNeueBold';
+    
+        .container {
+          font-size: 2rem;
+          color: #ff224a;  
+          .icones-sociais {
+            padding: 0 10px;
+          }
+        }
+      }
+    }

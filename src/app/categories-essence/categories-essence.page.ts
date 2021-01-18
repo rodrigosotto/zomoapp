@@ -8,13 +8,14 @@ import { Storage } from '@ionic/storage';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-essencia',
-  templateUrl: './essencia.page.html',
-  styleUrls: ['./essencia.page.scss'],
+  selector: 'app-categories-essence',
+  templateUrl: './categories-essence.page.html',
+  styleUrls: ['./categories-essence.page.scss'],
 })
-export class EssenciaPage implements OnInit {
-  essencesData: any;
-  
+export class CategoriesEssencePage implements OnInit {
+
+  allCategoriesData: any ;
+
   constructor(
     private apiService: ApiService,
     private router: Router,
@@ -22,22 +23,22 @@ export class EssenciaPage implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.getData();
+    this.getDataAllCategories();
   }
 
-  
-  async essenceView(id: any) {
+  async allCategoriesView(id: any) {
     await this.storage.set('id', id);
-    await this.router.navigateByUrl('single-post');
+    await this.router.navigateByUrl('single-category');
   }
 
-  async getData() {
-    await this.apiService.getAPIDataEssences().subscribe(res => {
+  async getDataAllCategories() {
+    await this.apiService.getAPIDataAllCategories().subscribe(res => {
       console.log(res);
-      this.essencesData = res;
-      console.log(this.essencesData);
+      this.allCategoriesData = res;
+      console.log(this.allCategoriesData);
     }, err => {
       console.log(err);
     });
   }
+
 }

@@ -11,12 +11,14 @@
   <ion-content [fullscreen]="true">
 
     <ion-text>
-      <h1 class="title-dashboard-page ion-text-center ion-padding">ABAIXO MAIS DE 200 SABORES PARA VOCÊ CURTIR!!  </h1>
+      <h1 class="title-dashboard-page ion-text-center ion-padding"> + DE 200 SABORES PARA VOCÊ CURTIR!!  </h1>
       </ion-text>
 
   <ion-list lines="full">
-    <ion-item (click)=postView(posts.id) detail *ngFor="let essence of essencesData">
-      <ion-label>{{essence.title.rendered}}</ion-label>
+    <!--<ion-item (click)=categoriesView(categories.id) detail *ngFor="let categories of categoriesData">-->
+    <ion-item (click)=allCategoriesView(categories.id) detail *ngFor="let categories of allCategoriesData">
+      <ion-label>{{categories.name}}</ion-label>
+   
     </ion-item>
     </ion-list>
     </ion-content>

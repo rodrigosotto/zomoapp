@@ -36,12 +36,13 @@ const routes: Routes = [
     loadChildren: () => import('./eventos/eventos.module').then( m => m.EventosPageModule)
   },
   {
-    path: 'essencia',
-    loadChildren: () => import('./essencia/essencia.module').then( m => m.EssenciaPageModule)
+    path: 'categories-essence',
+    loadChildren: () => import('./categories-essence/categories-essence.module').then( m => m.CategoriesEssencePageModule)
   },  {
-    path: 'single-essences',
-    loadChildren: () => import('./single-essences/single-essences.module').then( m => m.SingleEssencesPageModule)
+    path: 'single-category',
+    loadChildren: () => import('./single-category/single-category.module').then( m => m.SingleCategoryPageModule)
   },
+
 
 ];
 
