@@ -16,8 +16,6 @@ ion-content {
  ion-card {
    background-color: #001a5f;
    color: #fff;
-   font-size: 1.3rem;
-   font-family: 'BebasNeueBold';
 
    h1 {
      padding-bottom: 5px;
@@ -30,7 +28,6 @@ ion-content {
 }
 }
 
-
 ion-footer {
 
   ion-toolbar {
@@ -38,7 +35,7 @@ ion-footer {
     --background: #001a5f !important;
     color: #ff224a;
     font-family: 'BebasNeueBold';
-
+    
     p {
       font-size: 1.2rem;
     }

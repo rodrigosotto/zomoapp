@@ -4,21 +4,19 @@
       <ion-buttons slot="start">
         <ion-back-button></ion-back-button>
       </ion-buttons>
-      <ion-title class="ion-text-center">CATEGORIA DE ESSÊNCIAS</ion-title>
+      <ion-title class="ion-text-center">+SABORES PRA VOCÊ!</ion-title>
     </ion-toolbar>
   </ion-header>
   
   <ion-content [fullscreen]="true">
 
-    <ion-text>
-      <h1 class="title-dashboard-page ion-text-center ion-padding"> + DE 200 SABORES PARA VOCÊ CURTIR!!  </h1>
-      </ion-text>
-
   <ion-list lines="full">
     <!--<ion-item (click)=categoriesView(categories.id) detail *ngFor="let categories of categoriesData">-->
     <ion-item (click)=allCategoriesView(categories.id) detail *ngFor="let categories of allCategoriesData">
+      <ion-thumbnail slot="start">
+       <img src="{{categories.acf.iconcategoria.url}}">
+      </ion-thumbnail>
       <ion-label>{{categories.name}}</ion-label>
-   
     </ion-item>
     </ion-list>
     </ion-content>

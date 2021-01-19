@@ -28,11 +28,13 @@ ion-content {
         ion-label {
           font-family: 'BebasNeueBold';
           font-size: 1.2rem;
-          color: #4854e0;
+          color: #ff224a;
+          background-color: transparent;
+          padding: 1rem 0.5rem;
         }
         
         &:first-of-type {
-          border-top: 0.55px solid rgba(0, 0, 0, 0.185);
+          border-bottom: 0.55px solid rgba(0, 0, 0, 0.185);
         }
       }
      }
@@ -44,12 +46,16 @@ ion-content {
         //--background: #ffffff url('../../assets/images/fundos/fundo-azul-texturas.jpg') !important;
         --background: #001a5f !important;
         color: #ff224a;
-        font-size: 1rem;
         font-family: 'BebasNeueBold';
+        
+        p {
+          font-size: 1.2rem;
+        }
     
         .container {
-          font-size: 2rem;
+          font-size: 1.8rem;
           color: #ff224a;  
+    
           .icones-sociais {
             padding: 0 10px;
           }

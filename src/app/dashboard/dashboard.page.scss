@@ -49,16 +49,19 @@ ion-footer {
     //--background: #ffffff url('../../assets/images/fundos/fundo-azul-texturas.jpg') !important;
     --background: #001a5f !important;
     color: #ff224a;
-    font-size: 1rem;
     font-family: 'BebasNeueBold';
+    
+    p {
+      font-size: 1.2rem;
+    }
 
     .container {
-      font-size: 2rem;
+      font-size: 1.8rem;
       color: #ff224a;  
+
       .icones-sociais {
         padding: 0 10px;
       }
     }
   }
 }
-  

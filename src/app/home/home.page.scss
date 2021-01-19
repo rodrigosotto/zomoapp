@@ -33,7 +33,9 @@ ion-content {
   font-family: 'BebasNeueBold'; 
   font-size: 2.2rem;
 }
-.button-home {
-  margin-top: 3rem;
-  font-family: 'BebasNeueBold'; 
- }
+ion-button {
+ 
+    margin-top: 3rem;
+    font-family: 'BebasNeueBold'; 
+    letter-spacing: 5px;
+}

@@ -28,7 +28,7 @@ export class SingleCategoryPage implements OnInit {
   }
   async essenceView(id: any) {
     await this.storage.set('id', id);
-    await this.router.navigateByUrl('single-post');
+    await this.router.navigateByUrl('essencias');
   }
 
   async getDataSingleCategory(id) {

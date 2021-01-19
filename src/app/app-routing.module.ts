@@ -42,6 +42,10 @@ const routes: Routes = [
     path: 'single-category',
     loadChildren: () => import('./single-category/single-category.module').then( m => m.SingleCategoryPageModule)
   },
+  {
+    path: 'essencias',
+    loadChildren: () => import('./essencias/essencias.module').then( m => m.EssenciasPageModule)
+  },
 
 
 ];

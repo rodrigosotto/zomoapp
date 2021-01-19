@@ -4,7 +4,7 @@
       <ion-buttons slot="start">
         <ion-back-button></ion-back-button>
       </ion-buttons>
-      <ion-title class="ion-text-center"> LINHA -- NOME DA LINHA --</ion-title>
+      <ion-title class="ion-text-center"> ESSÊNCIAS ZOMO </ion-title>
     </ion-toolbar>
   </ion-header>
   
@@ -12,6 +12,9 @@
 
   <ion-list lines="full">
     <ion-item (click)=essenceView(singleCategory.id) detail *ngFor="let singleCategory of singleCatView">
+      <ion-thumbnail slot="start">
+        <img src="{{singleCategory.better_featured_image.source_url}}" />
+      </ion-thumbnail>
       <!-- <ion-avatar slot="start">
         <img src="../../assets/icon/icon-essencia.png" />
       </ion-avatar> -->

@@ -1,6 +1,5 @@
 import { HttpClient, HttpClientModule, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { EEXIST } from 'constants';
 import { throwError } from 'rxjs';
 import { Observable } from 'rxjs/internal/Observable';
 import {catchError, map} from 'rxjs/operators';
@@ -10,9 +9,13 @@ const httpHeaders = {
   headers: new HttpHeaders({'Content-Type': 'Application/json'})
 };
 
+// tslint:disable-next-line: variable-name
 const base_url = 'http://localhost:10022/wp-json/wp/v2/posts';
+// tslint:disable-next-line: variable-name
 const essences_url = 'http://localhost:10022/wp-json/wp/v2/essencias';
+// tslint:disable-next-line: variable-name
 const categories_url = 'http://localhost:10022/wp-json/wp/v2/categoria_das_essencias';
+// tslint:disable-next-line: variable-name
 const single_category = 'http://localhost:10022/wp-json/wp/v2/essencias?categoria_das_essencias';
  
 
@@ -69,8 +72,7 @@ categoryID: any;
       map(this.dataExtract),
       catchError(this.errorHandle)
     );
-  }     
-  
+  }
   //CATEGORIES API DATA
         getAPIDataAllCategories(): Observable<any> {
           return this.http.get(categories_url, httpHeaders).pipe(
@@ -78,7 +80,7 @@ categoryID: any;
             catchError(this.errorHandle)
           );
         }
-      
+
         getAPIDataAllCategoriesByID(id): Observable<any> {
           return this.http.get(categories_url + '/' + id, httpHeaders).pipe(
             map(this.dataExtract),
