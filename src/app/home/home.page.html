@@ -1,6 +1,11 @@
 <ion-content id="home-page" class="home-content" [fullscreen]="true">
  <div id="container">
   <ion-img src="../../assets/images/home/logotipo-2020-zomo-app.png"></ion-img>
-  <ion-button routerLink="../dashboard" routerDirection="forward" class="button-home " color="success" size="large" expand="block">ENTRAR</ion-button>
+  <ion-button routerLink="../dashboard" routerDirection="forward" class="button-home " color="primary" size="large" shape="round">
+    <ion-icon name="checkmark-outline"></ion-icon>
+    ENTRAR
+  </ion-button>
+  <ion-button (click)=sairDoApp() routerDirection="backward" color="medium" size="large" shape="round" >
+    <ion-icon slot="icon-only" name="close"></ion-icon> FECHAR </ion-button>
   </div>
 </ion-content>

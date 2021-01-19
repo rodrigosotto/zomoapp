@@ -10,13 +10,13 @@ const httpHeaders = {
 };
 
 // tslint:disable-next-line: variable-name
-const base_url = 'http://localhost:10022/wp-json/wp/v2/posts';
+const base_url = 'http://zomoofficial.foa.company/wp-json/wp/v2/posts';
 // tslint:disable-next-line: variable-name
-const essences_url = 'http://localhost:10022/wp-json/wp/v2/essencias';
+const essences_url = 'http://zomoofficial.foa.company/wp-json/wp/v2/essencias';
 // tslint:disable-next-line: variable-name
-const categories_url = 'http://localhost:10022/wp-json/wp/v2/categoria_das_essencias';
+const categories_url = 'http://zomoofficial.foa.company/wp-json/wp/v2/categoria_das_essencias';
 // tslint:disable-next-line: variable-name
-const single_category = 'http://localhost:10022/wp-json/wp/v2/essencias?categoria_das_essencias';
+const single_category = 'http://zomoofficial.foa.company/wp-json/wp/v2/essencias?categoria_das_essencias';
  
 
 @Injectable({
