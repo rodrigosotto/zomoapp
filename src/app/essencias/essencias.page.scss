@@ -1,11 +1,13 @@
 ion-header {
 
   ion-toolbar {
-    //--background: #fff url('../../assets/images/fundos/fundo-azul-texturas.jpg') !important;
-      --background: #001a5f;
-      color:#ff224a ;
-      font-size: 1.3rem;
-      font-family: 'BebasNeueBold';
+    --background: #550583;
+    }
+
+    ion-title {
+      font-size: 2rem;
+      color: #fff;
+      font-family: 'Cartoonish';
     }
 }
 
@@ -14,11 +16,13 @@ ion-content {
   font-family: 'BebasNeueBold';
 
  ion-card {
-   background-color: #001a5f;
+   background-color: #ff224a;
+   border-radius: 7%;
    color: #fff;
 
    h1 {
      padding-bottom: 5px;
+     font-size: 2rem;
    }
    
    ion-card-content {
@@ -31,22 +35,20 @@ ion-content {
 ion-footer {
 
   ion-toolbar {
-    //--background: #ffffff url('../../assets/images/fundos/fundo-azul-texturas.jpg') !important;
-    --background: #001a5f !important;
-    color: #ff224a;
-    font-family: 'BebasNeueBold';
-    
-    p {
-      font-size: 1.2rem;
+    //--background: #fff url('../../assets/images/fundos/fundo-azul-texturas.jpg') !important;
+    --background: #550583;
+
+    & div{
+        color: #ff224a;
+        font-size: 2rem;
+        font-family: 'Cartoonish';
+        margin: 1rem auto;
     }
 
-    .container {
-      font-size: 1.8rem;
-      color: #ff224a;  
-
-      .icones-sociais {
-        padding: 0 10px;
-      }
+    ion-icon {
+      font-size: 3rem;
+      color: #fff;
+      padding: 0 0.5rem 0.5rem;
     }
   }
 }

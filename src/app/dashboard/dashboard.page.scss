@@ -1,24 +1,25 @@
 ion-header {
 
   ion-toolbar {
-    --background: #fff url('../../assets/images/fundos/fundo-azul-texturas.jpg') !important;
-    background-size: contain;
-     // --background: #206eff;
+    //--background: #fff url('../../assets/images/fundos/fundo-azul-texturas.jpg') !important;
+    --background: #550583;
     }
 
     ion-title {
       font-size: 2rem;
       color: #fff;
-      font-family: 'BebasNeueBold';
+      font-family: 'Cartoonish';
     }
 }
 
 ion-content { 
-  --background: #fff url('../../assets/images/fundos/fundo-pages-app-zomo.jpg') !important;
+  //--background: #fff url('../../assets/images/fundos/fundo-pages-app-zomo.jpg') !important;
     font-family: 'BebasNeueBold';
+    --background: #dddddd;
     
     ion-list {
       background: transparent !important;
+      margin-top: 2rem;
       
       ion-item {
         --background: transparent !important;
@@ -26,7 +27,7 @@ ion-content {
 
         ion-label {
           font-family: 'BebasNeueBold';
-          font-size: 1.8rem;
+          font-size: 2rem;
           color: #206eff;
         }
         
@@ -36,10 +37,6 @@ ion-content {
       }
      }
 
-    .title-dashboard-page {
-      font-size: 2rem;
-      color: #206eff; 
-  }
     .title-icons-dash {
       font-size: 2rem;
       font-family: 'BebasNeueBold';
@@ -48,18 +45,22 @@ ion-content {
 }
  
 ion-footer {
-  span {
-    color: #206eff;
-    font-size: 2rem;
-    font-family: 'BebasNeueBold';
-  }
+
   ion-toolbar {
-    --background: #fff url('../../assets/images/fundos/fundo-azul-texturas.jpg') !important;
+    //--background: #fff url('../../assets/images/fundos/fundo-azul-texturas.jpg') !important;
+    --background: #550583;
+
+    & div{
+        color: #ff224a;
+        font-size: 2rem;
+        font-family: 'Cartoonish';
+        margin: 1rem auto;
+    }
 
     ion-icon {
       font-size: 3rem;
-      padding: 0.5rem 0.5rem ;
       color: #fff;
+      padding: 0 0.5rem 0.5rem;
     }
   }
 }

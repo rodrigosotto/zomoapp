@@ -7,23 +7,22 @@
   </ion-toolbar>
 </ion-header>
 <ion-content [fullscreen]="true">
-
+  
   <ion-card *ngIf="postView" class="ion-text-center">
     <img class="versoes" src="{{postView.better_featured_image.source_url}}">
 <p>{{postView.title.rendered}}</p>
 <ion-card-content [innerHTML]="postView.content.rendered" ></ion-card-content>
  
   </ion-card>
+ 
 </ion-content>
   
   <!-- Footer without a border -->
   <ion-footer class="ion-no-border rodape ion-text-center">
-    <ion-toolbar class=" rodape-toolbar ion-padding-bottom">
-      <p class="title-dashboard-footer">SEGUE A GENTE MEU JOVEM!</p>
          <div class="container ion-text-center">
           <ion-icon name="logo-facebook" class="icones-sociais"></ion-icon>
           <ion-icon name="logo-instagram" class="icones-sociais"></ion-icon>
           <ion-icon name="logo-youtube" class="icones-sociais"></ion-icon>
         </div>
-    </ion-toolbar>
+
   </ion-footer>

@@ -2,24 +2,24 @@ ion-header {
 
   ion-toolbar {
     //--background: #fff url('../../assets/images/fundos/fundo-azul-texturas.jpg') !important;
-      --background: #001a5f;
-      color:#ff224a ;
-      font-size: 1.3rem;
-      font-family: 'BebasNeueBold';
+    --background: #550583;
+    }
+
+    ion-title {
+      font-size: 2rem;
+      color: #fff;
+      font-family: 'Cartoonish';
     }
 }
 
 ion-content { 
-  --background: #fff url('../../assets/images/fundos/fundo-pages-app-zomo.jpg') !important;
+  //--background: #fff url('../../assets/images/fundos/fundo-pages-app-zomo.jpg') !important;
     font-family: 'BebasNeueBold';
-
-    .title-dashboard-page {
-      font-size: 1.7rem;
-      color: #ff224a; 
-  }
+    --background: #dddddd;
     
     ion-list {
       background: transparent !important;
+      margin-top: 2rem;
       
       ion-item {
         --background: transparent !important;
@@ -27,8 +27,8 @@ ion-content {
 
         ion-label {
           font-family: 'BebasNeueBold';
-          font-size: 1.2rem;
-          color: #4854e0;
+          font-size: 2rem;
+          color: #206eff;
         }
         
         &:first-of-type {
@@ -36,27 +36,31 @@ ion-content {
         }
       }
      }
-    }
-    
-    ion-footer {
 
-      ion-toolbar {
-        //--background: #ffffff url('../../assets/images/fundos/fundo-azul-texturas.jpg') !important;
-        --background: #001a5f !important;
+    .title-icons-dash {
+      font-size: 2rem;
+      font-family: 'BebasNeueBold';
+      color: #fff; 
+  }
+}
+ 
+ion-footer {
+
+  ion-toolbar {
+    //--background: #fff url('../../assets/images/fundos/fundo-azul-texturas.jpg') !important;
+    --background: #550583;
+
+    & div{
         color: #ff224a;
-        font-family: 'BebasNeueBold';
-        
-        p {
-          font-size: 1.2rem;
-        }
-    
-        .container {
-          font-size: 1.8rem;
-          color: #ff224a;  
-    
-          .icones-sociais {
-            padding: 0 10px;
-          }
-        }
-      }
+        font-size: 2rem;
+        font-family: 'Cartoonish';
+        margin: 1rem auto;
     }
+
+    ion-icon {
+      font-size: 3rem;
+      color: #fff;
+      padding: 0 0.5rem 0.5rem;
+    }
+  }
+}
